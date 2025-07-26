@@ -5,7 +5,7 @@ document.querySelectorAll("button").forEach(btn => {
     const antwort = btn.value === "komme" ? "Ich komme" : "Ich komme nicht";
 
     if (!name) {
-      alert("Bitte gib deinen Namen ein.");
+      alert("Bitte gib deinen Namen ein./ Ju lutem shkruani emrin tuaj");
       return;
     }
 
