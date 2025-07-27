@@ -62,6 +62,7 @@ input[type="text"] {
 }
 
 .buttons {
+  margin-top: 20px; 
   display: flex;
   justify-content: center;
   gap: 20px;
