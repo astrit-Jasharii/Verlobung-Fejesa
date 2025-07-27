@@ -1,9 +1,9 @@
 document.querySelectorAll("button").forEach(btn => {
   btn.addEventListener("click", async function (e) {
     e.preventDefault();
-    
+
     const name = document.getElementById("name").value.trim();
-    const anzahl = document.getElementById("anzahl").value;
+    const personen = document.getElementById("anzahl").value;
     const antwort = btn.value === "komme" ? "Ich komme" : "Ich komme nicht";
 
     if (!name || !anzahl) {
@@ -13,7 +13,7 @@ document.querySelectorAll("button").forEach(btn => {
 
     // ➕ Daten an Supabase senden
     const { error } = await supabase.from("Gäste").insert([
-      { name, antwort, anzahl: parseInt(anzahl) }
+      { name, antwort, Personen: parseInt(personen) }
     ]);
 
     if (error) {
