@@ -12,7 +12,7 @@ document.querySelectorAll("button").forEach(btn => {
     }
 
     // ➕ Daten an Supabase senden
-    const { error } = await supabase.from("antworten").insert([
+    const { error } = await supabase.from("Gäste").insert([
       { name, antwort, anzahl: parseInt(anzahl) }
     ]);
 
