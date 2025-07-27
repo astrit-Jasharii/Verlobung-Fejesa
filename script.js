@@ -6,7 +6,7 @@ document.querySelectorAll("button").forEach(btn => {
     const personen = document.getElementById("anzahl").value;
     const antwort = btn.value === "komme" ? "Ich komme" : "Ich komme nicht";
 
-    if (!name || !anzahl) {
+    if (!name || !personen) {
       alert("Bitte gib deinen Namen und die Anzahl Personen an. / Ju lutem shkruani emrin dhe numrin e personave");
       return;
     }
